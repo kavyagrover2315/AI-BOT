@@ -5,7 +5,7 @@ body {
     margin: 0;
     padding: 0;
     height: 100vh;
-    background: linear-gradient(#000428, #004e92);
+    background: linear-gradient(navy, darkslateblue);
     color: white;
     font-family: 'Arial', sans-serif;
     overflow: hidden;
@@ -29,10 +29,10 @@ body {
     z-index: 1;
     max-width: 600px;
     margin: 50px auto;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.6); /* remains as rgba for transparency */
     padding: 20px;
     border-radius: 15px;
-    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.2); /* transparent white shadow */
     text-align: center;
 }
 
@@ -53,7 +53,7 @@ h1 {
 .chatbox {
     height: 300px;
     overflow-y: auto;
-    background: rgba(255, 255, 255, 0.1);
+    background: rgba(255, 255, 255, 0.1); /* semi-transparent white */
     padding: 15px;
     border-radius: 10px;
     margin-bottom: 20px;
@@ -68,13 +68,13 @@ h1 {
 }
 
 .user-message {
-    background-color: #3498db;
+    background-color: dodgerblue;
     color: white;
     align-self: flex-end;
 }
 
 .bot-message {
-    background-color: #2ecc71;
+    background-color: mediumseagreen;
     color: white;
     align-self: flex-start;
 }
@@ -96,7 +96,7 @@ input[type="text"] {
 
 button {
     padding: 10px 20px;
-    background-color: #e67e22;
+    background-color: darkorange;
     border: none;
     border-radius: 8px;
     color: white;
@@ -106,19 +106,4 @@ button {
 }
 
 button:hover {
-    background-color: #d35400;
-}
-
-/* Scrollbar for chatbox */
-.chatbox::-webkit-scrollbar {
-    width: 8px;
-}
-
-.chatbox::-webkit-scrollbar-thumb {
-    background: #888;
-    border-radius: 4px;
-}
-
-.chatbox::-webkit-scrollbar-thumb:hover {
-    background: #555;
-}
+    background
